@@ -17,7 +17,6 @@ const CarouselPage = ({ preBuildedPCs }) => {
         showControls={true}
         showIndicators={true}
         className="z-depth-1 h-100"
-       
       >
         <MDBCarouselInner>
           {preBuildedPCs.map((preBuildedPC, index) => {
@@ -57,12 +56,21 @@ const CarouselPage = ({ preBuildedPCs }) => {
                           </motion.div>
                         </div>
                         <div
-                          style={{ width: "500px", height: "500px" }}
-                          className=" d-flex w-responsive h-50 flex-column  align-items-center "
+                          className=" w-75 d-flex   flex-column  align-items-center "
+                      
                         >
-                          <img
+                          {/* <img
                             src={preBuildedPC.imgUrl}
-                            className=" img-fluid"
+                            alt="thumbnail"
+                            className="img-thumbnail"
+                          /> */}
+                          <img
+                          style={{
+                            width: "50% !important",
+                            height: "50% !important",
+                          }}
+                            src={preBuildedPC.imgUrl}
+                            className="img-fluid "
                             alt="PC-img"
                           />
                         </div>

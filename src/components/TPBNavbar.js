@@ -39,7 +39,7 @@ export default function () {
     SetOpen(!Open);
   };
   return (
-    <div className="position-absolute w-100" style={{zIndex:"2"}}>
+    <div className="position-absolute w-100" style={{zIndex:"4"}}>
       <MDBNavbar
         color="grey  border-bottom border-danger darken-4"
         dark={true}

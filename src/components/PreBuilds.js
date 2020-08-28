@@ -55,20 +55,17 @@ const CarouselPage = ({ preBuildedPCs }) => {
                             </MDBBtn>
                           </motion.div>
                         </div>
-                        <div
-                          className=" pre-build-pc-img-container  d-flex   flex-column  align-items-center "
-                      
-                        >
+                        <div className=" pre-build-pc-img-container  d-flex   flex-column  align-items-center ">
                           {/* <img
                             src={preBuildedPC.imgUrl}
                             alt="thumbnail"
                             className="img-thumbnail"
                           /> */}
                           <img
-                          style={{
-                            width: "50% !important",
-                            height: "50% !important",
-                          }}
+                            style={{
+                              width: "50% !important",
+                              height: "50% !important",
+                            }}
                             src={preBuildedPC.imgUrl}
                             className="img-fluid "
                             alt="PC-img"

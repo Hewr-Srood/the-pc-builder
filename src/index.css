@@ -23,10 +23,15 @@ code {
 .dropdown-item:hover {
   background: #434343 !important;
 }
-
+.pre-build-pc-img-container{
+  width: 50%;
+}
 @media only screen and (max-width: 870px) {
   h1{
     font-size:2rem !important;
+  }
+  .pre-build-pc-img-container{
+    width: 75%;
   }
   .detail-btn{
     align-self: flex-end;

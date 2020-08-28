@@ -56,7 +56,7 @@ const CarouselPage = ({ preBuildedPCs }) => {
                           </motion.div>
                         </div>
                         <div
-                          className=" w-75 d-flex   flex-column  align-items-center "
+                          className=" pre-build-pc-img-container  d-flex   flex-column  align-items-center "
                       
                         >
                           {/* <img

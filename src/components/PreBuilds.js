@@ -4,7 +4,6 @@ import {
   MDBCarouselInner,
   MDBCarouselItem,
   MDBView,
-  MDBContainer,
   MDBBtn,
 } from "mdbreact";
 import { motion } from "framer-motion";
@@ -17,8 +16,8 @@ const CarouselPage = ({ preBuildedPCs }) => {
         length={preBuildedPCs.length}
         showControls={true}
         showIndicators={true}
-        className="z-depth-1 "
-        className="h-100"
+        className="z-depth-1 h-100"
+       
       >
         <MDBCarouselInner>
           {preBuildedPCs.map((preBuildedPC, index) => {

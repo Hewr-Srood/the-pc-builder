@@ -12,7 +12,6 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 import Texty from "rc-texty";
 import "rc-texty/assets/index.css";
@@ -40,8 +39,12 @@ export default function () {
     SetOpen(!Open);
   };
   return (
-    <Router>
-      <MDBNavbar color="grey darken-4" dark={true} expand="md">
+    <div className="position-absolute w-100" style={{zIndex:"2"}}>
+      <MDBNavbar
+        color="grey  border-bottom border-danger darken-4"
+        dark={true}
+        expand="md"
+      >
         <MDBNavbarBrand>
           <strong className="texty-demo">
             <Texty duration={450} delay={250}>
@@ -57,14 +60,16 @@ export default function () {
                 <MDBDropdownToggle className=" mx-2" nav caret>
                   <span>Parts</span>
                 </MDBDropdownToggle>
-                <MDBDropdownMenu >
-                  {parts.map((part,index) => (
-                    <MDBDropdownItem key={index} href="#!">{part.name}</MDBDropdownItem>
+                <MDBDropdownMenu>
+                  {parts.map((part, index) => (
+                    <MDBDropdownItem key={index} href="#!">
+                      {part.name}
+                    </MDBDropdownItem>
                   ))}
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
-            {navItems.map((item,index) => (
+            {navItems.map((item, index) => (
               <MDBNavItem key={index}>
                 <motion.div
                   className="navlink rounded mx-2 "
@@ -79,6 +84,6 @@ export default function () {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-    </Router>
+    </div>
   );
 }

@@ -17,7 +17,7 @@ const preBuildPCArr = [
     type: "BUDGET GAMING PC",
     info: "AMD R5-2400G within XFX RX 580",
     price: "$700",
-    imgUrl: "https://png2.cleanpng.com/sh/984b6f5539092415965bff7c94198c2d/L0KzQYm3UsAzN5VufZH0aYP2gLBuTfNwdaF6jNd7LXPkg7a0kP94baMyiAd5cHz8Pcb1igQuaaV9RdlqbXnxd37qjB1xfaVqRdV5dT3mcbPwjvV1NaFzf599cnHxg8HokvVvfF51gdV9dYLoPYboV8U0PGRpSqk5Y3a2PoKCVcgzOmQ5Sac6N0a2QIa5VcE3NqFzf3==/kisspng-computer-case-power-supply-unit-atx-gaming-compute-cpu-cabinet-png-transparent-picture-5a75343d270cf3.19582234151763052516.png",
+    imgUrl: "https://www.cyberpowerpc.com/images/cs/h550/cs-450-150_400.png?v1",
   },
 ];
 function App() {
